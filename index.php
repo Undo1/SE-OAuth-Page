@@ -26,5 +26,7 @@ else
     $client->setAccessToken($info['access_token']);
     
     echo 'access token: ' . $info['access_token'];
+    echo PHP_EOL;
+    echo 'key: ' . ClientKey();
 }
 
