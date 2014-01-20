@@ -25,6 +25,6 @@ else
     parse_str($response['result'], $info);
     $client->setAccessToken($info['access_token']);
     
-    echo 'access token: ' . $info['access_token']);
+    echo 'access token: ' . $info['access_token'];
 }
 
