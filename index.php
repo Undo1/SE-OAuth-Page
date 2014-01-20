@@ -24,7 +24,7 @@ else
     $response = $client->getAccessToken($TOKEN_ENDPOINT, 'authorization_code', $params);
     parse_str($response['result'], $info);
     $client->setAccessToken($info['access_token']);
-    $response = $client->fetch('https://api.stackexchange.com/2.2/me/inbox');
-    var_dump($response, $response['result']);
+    
+    echo 'access token: ' . $info['access_token']);
 }
 
